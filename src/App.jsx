@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div className=' bg-cyan-700 w-auto h-auto p-4 flex flex-col item-center align-cente gap-4 '>
       <Header /> 
+     
       <Postselection/> 
 
       <Footer/>

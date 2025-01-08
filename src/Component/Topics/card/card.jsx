@@ -2,10 +2,8 @@ import React from 'react'
 
 const Card = () => {
     
-    const handleGreet = () => {
-         let firstName = (prompt('hey ther enter your name '))
-         console.log(alert (`${firstName} welcome here`))
-         let page = <img src="../../Topics/Postselection.jsx" alt="" srcset="" /> 
+    const handleGreet = (
+  
 
     }
   return (
