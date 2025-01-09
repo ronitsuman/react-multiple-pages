@@ -1,0 +1,76 @@
+npm i react-router-dom
+
+import {Route , Routes } from "react-router-dom"
+
+<header>
+<Routes>
+<Route path = "/" element={<Home />}
+<Route path = "/about" element={<About/>}
+<Route path = "/contact" element={<Contact/>}
+<Route path = "/blogs" element={<Blogs/>}
+</Routes>
+</header>
+
+
+link in header tags 
+main me browser router ke beech me app daalna hita hita
+
+
+routing 3 type  process  -
+ const App = ()=>{
+    let router = createBrowserRouter([
+        {
+            path: "/",
+            elements:(
+                <>
+                <Header/>
+                <Home/>
+                <>
+            ),
+        },{
+            path : "/about"
+            element: (
+                <>
+                <Header/>
+                <About/>
+                <>
+            ),
+        },
+        },{
+            path : "/contact"
+            element: (
+                <>
+                <Header/>
+                <contact/>
+                <>
+            ),
+        },
+        },{
+            path : "/blogs"
+            element: (
+                <>
+                <Header/>
+                <Blogs/>
+                <>
+            ),
+        },
+    ]);
+    return (
+        <>
+        <RouterProvider router={router}/> 
+        </>
+    )
+ }
+
+
+ link vs nav link 
+ 1. link me is active ka use ni kr sk skte hai
+2..navlink me classname me is active function lagane hai 
+3. 
+
+
+
+Dynamic routing 
+
+
+
