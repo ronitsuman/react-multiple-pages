@@ -1,13 +1,23 @@
-import React from 'react'
+
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
       <div className='w-[100vw] px-6 py-4 bg-blue-700'>
        <nav className='flex list-none gap-5 text-white justify-end'>
-        <li><Link to="/" onClick={(event)=>handleNavClick(event , 1)}  href="/">Home </Link></li>
-        <li><a onClick={(event)=>handleNavClick(event , 2)} href="/bout">About</a></li>
-        <li><a onClick={(event)=>handleNavClick(event , 3)} href="/contact">Contact </a></li>
-        <li><a onClick={(event)=>handleNavClick(event , 4)} href="/blog">Blogs </a></li>
+        <li>
+          <NavLink className={(isActive)=>(isActive ? "text-green-500": "text-white")} to="/"  href="/">
+          Home </NavLink>
+        </li>
+        <li>
+          <NavLink className={(isActive)=>(isActive ? "text-green-500": "text-white")} to="/about">About</NavLink>
+        </li>
+        <li>
+        <NavLink className={(isActive)=>(isActive ? "text-green-500": "text-white")} to="/contact">Contact </NavLink>
+        </li>
+        <li>
+        <NavLink className={(isActive)=>(isActive ? "text-green-500": "text-white")} to="/blog">Blogs </NavLink>
+        </li>
         </nav>  
       </div>
   )

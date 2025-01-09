@@ -1,8 +1,10 @@
-import React from 'react'
+import CardContainer from "./../Blog Or Card/CardContainer"
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div>
+      <CardContainer/>
+    </div>
   )
 }
 
